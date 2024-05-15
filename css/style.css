@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#selected {
+  color: orangered;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+header .ads {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .ads h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+}
+header .contact {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  clear: both;
+}
+header .contact .phone-number {
+  min-width: 150px;
+}
+header .contact .phone-number p {
+  float: left;
+  margin-left: 5px;
+  color: gray;
+}
+header .contact .email {
+  min-width: 180px;
+  float: left;
+}
+header .contact .email p {
+  float: left;
+  margin-left: 5px;
+  color: gray;
+}
+header .contact .cart {
+  min-width: 150px;
+  float: right;
+}
+header .contact .cart p {
+  float: right;
+  margin-left: 5px;
+}
+header .contact .language {
+  min-width: 150px;
+  float: right;
+}
+header .contact .language p {
+  float: right;
+  margin: 0 5px;
+}
+header .contact .language #angle-down:hover {
+  color: aliceblue;
+  background-color: aqua;
+}
+header .main-header-container {
+  width: 100%;
+  height: 100px;
+  background-color: gainsboro;
+  clear: both;
+}
+header .main-header-container .main-header {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .main-header-container .main-header .logo {
+  width: 150px;
+  height: 100px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-width: 150px;
+}
+header .main-header-container .main-header .search-bar {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  min-width: 350px;
+}
+header .main-header-container .main-header .search-bar input {
+  width: 85%;
+  border-radius: 10px 0 0 10px;
+  font-size: medium;
+  line-height: 40px;
+  padding: 5px 20px;
+  border: 1px solid gray;
+  outline: none;
+}
+header .main-header-container .main-header .search-bar button {
+  background-color: orange;
+  width: 15%;
+  padding: 5px 20px;
+  line-height: 42px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+header .main-header-container .main-header .info {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .main-header-container .main-header .info .info-frame {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-width: 67px;
+}
+header .main-header-container .main-header .info .info-frame img {
+  height: 50px;
+}
+header .main-header-container .main-header .info .favourite {
+  position: relative;
+}
+header .main-header-container .main-header .info .favourite::after {
+  content: "0";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+header .main-header-container .main-header .info .e-cart {
+  position: relative;
+}
+header .main-header-container .main-header .info .e-cart::after {
+  content: "0";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+header .menu-container {
+  width: 100%;
+  height: 70px;
+}
+header .menu-container .menu {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+}
+header .menu-container .menu ul {
+  list-style: none;
+  height: 100%;
+}
+header .menu-container .menu ul li {
+  float: left;
+  height: 100%;
+  margin-right: 40px;
+  min-width: 90px;
+}
+header .menu-container .menu ul li a {
+  text-decoration: none;
+  display: block;
+  line-height: 70px;
+  font-size: large;
+  color: black;
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  min-width: 100px;
+  position: relative;
+}
+header .menu-container .menu ul li a:hover {
+  color: orangered;
+  font-size: medium;
+}
+header .menu-container .menu ul li a:hover + #product {
+  display: flex;
+  flex-direction: column;
+}
+header .menu-container .menu ul li a:hover + #product a {
+  text-decoration: none;
+  color: black;
+  border: none;
+  font-size: smaller;
+  font-weight: 100;
+  font-weight: 100;
+  line-height: 40px;
+}
+header .menu-container .menu ul li #product:hover {
+  display: flex;
+  flex-direction: column;
+}
+header .menu-container .menu ul li #product:hover a {
+  color: black;
+  text-decoration: none;
+  font-size: smaller;
+  border: none;
+  font-weight: 100;
+  line-height: 40px;
+}
+header .menu-container .menu ul li #product:hover a:hover {
+  border-left: 4px solid black;
+  padding-left: 5px;
+}
+header .menu-container .menu ul li #product {
+  width: 150px;
+  position: absolute;
+  display: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
